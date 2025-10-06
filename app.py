@@ -109,3 +109,6 @@ async def predict_diagnosis(request: DiagnosisRequest):
         logger.error(f"💥 Prediction error: {e}")
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
+@app.get("/")
+async def root():
+    return {"message": "API is running!"}
