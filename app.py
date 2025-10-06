@@ -15,7 +15,9 @@ logger = logging.getLogger("diagnosis_api")
 # =======================
 # CONFIGURATION
 # =======================
-MODEL_DIR = r"C:\Users\junio\Desktop\Projects\med-reminder\med-assistant-backend\diagnosis-api\models"
+#MODEL_DIR = r"C:\Users\junio\Desktop\Projects\med-reminder\med-assistant-backend\diagnosis-api\models"
+MODEL_DIR = os.path.join(os.path.dirname(__file__), "models")
+
 MODEL_FILE = "disease_diagnosis_pipeline.pkl"
 
 # =======================
